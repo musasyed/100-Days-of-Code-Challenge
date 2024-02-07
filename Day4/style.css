@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f6ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.notification-container{
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    /* border: solid black; */
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.blue-section{
+    background-color: #e9eaff;
+    position: absolute;
+    border-radius: 2rem;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: -45%;
+    left: -15%;
+    z-index: -1;
+
+}
+
+.icon-tabler-bell-filled{
+    border-radius: 50%;
+    background: #0d0e43;
+    color: white;
+    padding: 0.25rem;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: -3.5rem;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+.icon-tabler-bell-filled:hover{
+    background-color: white;
+    color: #0d0e43;
+}
+
+
+.notification{
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem #e6e6f2;
+    width: 100%;
+    max-width: 500px;
+    transition: 0.5s;
+}
+
+.icon-tabler-mail-filled{
+    background: #ffe8f3;
+    color: #ce4173;
+    padding: 0.70rem;
+    border-radius: 0.25rem;
+}
+
+.icon-tabler-brand-twitter{
+    color:  #1287bb;
+}
+
+
+.icon-tabler-brand-facebook{
+    color: #1287bb;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+    margin:0.8rem 0;
+}
+
+.info{
+    display: flex;
+    gap: 1rem;
+}
+
+p{
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+button{
+    background: white;
+    border-radius: 2rem;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 0.8rem;
+}
+
+
+.twitter{
+    color: #1287bb;
+    margin-left: -5rem;
+}
+
+.facebook{
+    color: #1287bb;
+}
+.twitter:hover{
+    background: #1287bb;
+    color: white;
+}
+.twitter:hover .icon-tabler-brand-twitter{
+    color: white;
+}
+
+
+.facebook:hover {
+    background: #1287bb;
+    color: white;
+}
+.facebook:hover .icon-tabler-brand-facebook {
+    color: white;
+}
+
+
+@media (max-width:350px){
+    .twitter{
+        margin-left: unset;
+    }
+}
